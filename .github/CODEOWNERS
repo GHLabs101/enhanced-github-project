@@ -1,10 +1,1 @@
-# Lines starting with '#' are comments
-
-# Specify owners for the entire repository:
-*       @GHLabs101
-
-# Assign a team for JavaScript files:
-*.js    @GHLabs101/frontend-team
-
-# Owner for changes in docs folder:
-/docs/  @GHLabs101
+# config goes here
