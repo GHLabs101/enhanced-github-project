@@ -1,0 +1,43 @@
+name: Bug Report
+description: Report a reproducible bug
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the details below. All fields are required unless marked optional.
+  - type: input
+    id: title
+    attributes:
+      label: Short description
+      description: Provide a concise description of the bug
+      placeholder: "Bug: App crashes on launch"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide step-by-step instructions to reproduce the bug
+      placeholder: |
+        1. Open the app
+        2. Click on 'Start'
+        3. Observe the crash
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this issue?
+      options:
+        - Critical
+        - Major
+        - Minor
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem (optional)
