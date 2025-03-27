@@ -1,0 +1,13 @@
+{
+  "name": "My Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {},
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ]
+}
