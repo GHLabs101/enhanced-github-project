@@ -1,1 +1,17 @@
+name: Explore Default Env Vars
 
+on:
+  push:
+    branches: [main]
+
+jobs:
+  show-vars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show environment variables
+        run: |
+          echo "Repository: $GITHUB_REPOSITORY"
+          echo "Actor: $GITHUB_ACTOR"
+          echo "SHA: $GITHUB_SHA"
+          echo "Event Name: $GITHUB_EVENT_NAME"
+          echo "Workflow: $GITHUB_WORKFLOW"
